@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  height: 100%;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  z-index: 10;
+  background-color: #9ba09b49;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li.active a {
+  color: #376847;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.user-icon {
+  height: 50px;
+  cursor: pointer;
+}
+
+  
+  /* Ensure page content sits below the absolutely-positioned header */
+  .donors-page {
+    margin-top: 20px; /* Adjust if header height changes */
+    padding: 20px;
+  }
+  .donors-hero{
+    text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  }
+  
+  /* Hero Section Styling */
+  .donors-hero {
+    text-align: center;
+    margin-bottom: 50px;
+   
+  }
+  .donors-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .donors-hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+    /* Donors Grid */
+  .donors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .donor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #8e948f; 
+  }
+  .donor-logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Newsletter Section */
+  .newsletter-subscribe {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+  .newsletter-subscribe h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  .subscribe-form {
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  .subscribe-form button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-form button:hover {
+    background-color: #3cb55698;
+  }
+  .newsletter-subscribe p {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+/* Styles for donor-logo images with a hover effect */
+.donor-logo a img {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .donor-logo a:hover img {
+    transform: scale(1.1); /* Scales image to 110% of its original size when hovered */
+  }
+
+  .goals-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0 5px;
+}

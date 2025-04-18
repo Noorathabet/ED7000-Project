@@ -1,0 +1,274 @@
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  height: 100%;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  z-index: 10;
+  background-color:#9ba09b49 ;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li.active a {
+  color: #376847;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.user-icon {
+  height: 50px;
+  cursor: pointer;
+}
+    /* VOLUNTEERS SECTION */
+    .volunteers-section {
+      text-align: center;
+      padding: 50px 20px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #222;
+        margin-top: 20px;
+        font-family: 'Georgia', serif;
+    }
+    
+    .volunteers-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+    }
+    
+    .volunteers-section p {
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #666;
+    }
+    
+    .volunteers-section img.goals-icon {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+    
+    /* Container for volunteer cards - no wrapping */
+    .volunteers-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      overflow-x: auto;
+    }
+    
+    /* Volunteer Card Style */
+    .volunteer-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 300px;
+      flex-shrink: 0;
+    }
+    
+    .volunteer-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .volunteer-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    
+    .volunteer-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .volunteer-role {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      background-color: #f3f3f3;
+    }
+    
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+    }
+    
+    /* CALL TO ACTION (CTA) SECTION */
+    .cta-section {
+      background-color: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 2rem;
+      font-family: 'Georgia', serif;
+    }
+    
+    .cta-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Georgia', serif;
+    }
+    
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #4CAF50;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Georgia', serif;
+    }
+    
+    .cta-button:hover {
+      background-color: #e6e6e6;
+    }
+    
+    /* Modal Styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+    
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+      position: relative;
+    }
+    
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close:hover {
+      color: #000;
+    }
+    
+    .modal form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .modal label {
+      font-weight: bold;
+    }
+    
+    .modal input,
+    .modal textarea {
+      padding: 8px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .modal button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .modal button:hover {
+      background-color: #45a049;
+    }
+    
+    /* FULL HEIGHT LAYOUT */
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-content {
+      flex: 1;
+    }

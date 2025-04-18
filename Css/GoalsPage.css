@@ -1,0 +1,162 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: #fff;
+  color: #333;
+}
+
+/* HEADER */
+.main-header {
+  background-color:#9ba09b49 ;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section .logo {
+  height: 80px;
+}
+
+
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li.active a {
+  color: #376847;
+}
+
+.nav-links li a:hover::after,
+.nav-links li.active a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #376847;
+  bottom: -5px;
+  left: 0;
+}
+
+.right-section .user-icon {
+  height: 50px;
+  cursor: pointer;
+}
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.title-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+
+/* GOALS SECTION */
+.goals-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.goals-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.goals-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+/* Flex layout for 3 columns per row */
+.goals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Box style */
+.goal-box {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 15px;
+  width: calc(33.33% - 30px);
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.goal-box:hover {
+  transform: translateY(-6px);
+  background-color: #3e9443;
+}
+
+.goal-box img {
+  width: 40px;   /* was 50px */
+  height: 40px;  /* was 50px */
+  margin-bottom: 12px;
+}
+
+
+.goal-box h3 {
+  font-size: 15px;  /* slightly reduced */
+  font-weight: 600; /* bold but not too strong */
+  margin-bottom: 6px;
+  font-family: 'Georgia', serif;
+}
+
+
+.goal-box p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #f1f1f1; /* lighter for better contrast on green */
+}
+.goals-icon {
+  width: 40px; /* Adjust this value to make the leaves smaller */
+  height: 40; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align with text */
+  margin: 0 5px; /* Space between the image and text */
+}
+
