@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <!-- Link to your existing CSS file -->
+  <link rel="stylesheet" href="../Css/ContactPage.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="left-section">
+      <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" class="logo" />
+    </div>
+    <nav class="center-section">
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="GoalsPage.html">Goals</a></li>
+        <li><a href="DonatePage.html">Donate</a></li>
+        <li><a href="VolunteersPage.html">Volunteers</a></li>
+        <li><a href="EventsPage.html">Events</a></li>
+        <li><a href="Footprint.html">Footprint</a></li>
+        <li><a href="GalleryPage.html">Gallery</a></li>
+        <li><a href="DonersPage.html">Donors</a></li>
+        <li class="active"><a href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="right-section">
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" class="user-icon" />
+    </div>
+  </header>
+
+  <!-- Main content for the Contact Page -->
+  <main class="contact-page">
+    <!-- Page Title / Hero Section -->
+    <section class="contact-hero">
+      <h1>
+        <i>
+          <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+          Contact Us
+          <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+        </i>
+      </h1>
+    </section>
+
+    <!-- Contact Cards Section -->
+    <section class="contact-cards">
+      <!-- Card 1: Visit Us -->
+      <div class="contact-card">
+        <br><br><br>
+        <img src="../Image/contactiamgepage/visit.png" alt="Visit Icon" class="contact-icon" />
+        <h2 class="card-title">VISIT US</h2>
+        <p>
+          We welcome visitors to our headquarters to learn more about our environmental initiatives. 
+          Join us for tours and workshops! <br/>
+          <strong>Our Office:</strong><br />
+          <strong>Save Green Organization</strong><br />
+          <strong>123 Bulding</strong><br />
+          <strong>Manama, Road 1637</strong><br />
+          <a href="https://www.google.com/maps/place/Bahrain+Polytechnic/@26.1632084,50.543838,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49ae678f42e441:0xa9456a2084cbbe49!8m2!3d26.1632084!4d50.543838!16s%2Fm%2F0b6j4yt?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"><strong>Get Directions</strong></a>
+        </p>
+      </div>
+
+      <!-- Card 2: Have Questions? -->
+      <div class="contact-card">
+        <br><br><br>
+        <img src="../Image/contactiamgepage/call.png" alt="Phone Icon" class="contact-icon" />
+        <h2 class="card-title">CALL US</h2>
+        <p>
+          Have questions or want to get involved? Feel free to reach out to us!
+          <br />
+          <strong>Phone: (973) 37641688</strong>
+        </p>
+      </div>
+
+      <!-- Card 3: Contact Us -->
+      <div class="contact-card">
+        <br><br><br>
+        <img src="../Image/contactiamgepage/contact.png" alt="Mail Icon" class="contact-icon" />
+        <h2 class="card-title">CONTACT US</h2>
+        <p>
+          For inquiries, partnerships, or volunteer opportunities, please fill out our contact form.
+        </p>
+        <button id="show-form-btn">Contact Form</button>
+        
+        <!-- CONTACT FORM CONTAINER -->
+        <div id="contact-form" style="display: none; margin-top: 20px;">
+          <h2>Contact Form</h2>
+          <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <div id="response-message" style="display: none;">
+            ✅ Thank you for reaching out! We appreciate your message and will get back to you soon.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Function to handle form submission
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      // Optional: Validate input values
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Hide the form
+      document.getElementById("form").style.display = "none";
+
+      // Show the success message
+      const response = document.getElementById("response-message");
+      response.style.display = "block";
+    }
+
+    // Event listener to show the contact form when the button is clicked
+    document.getElementById("show-form-btn").addEventListener("click", function() {
+      document.getElementById("contact-form").style.display = "block";
+    });
+
+    // Event listener for form submission
+    document.getElementById("form").addEventListener("submit", handleSubmit);
+  </script>
+</body>
+</html>

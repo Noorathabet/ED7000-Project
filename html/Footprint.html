@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenWave - Volunteers</title>
+  <link rel="stylesheet" href="../Css/Footprint.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="left-section">
+      <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" class="logo" />
+    </div>
+    <nav class="center-section">
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="GoalsPage.html">Goals</a></li>
+        <li><a href="DonatePage.html">Donate</a></li>
+        <li><a href="VolunteersPage.html">Volunteers</a></li>
+        <li><a href="EventsPage.html">Events</a></li>
+        <li class="active"><a href="Footprint.html">Footprint</a></li>
+        <li><a href="GalleryPage.html">Gallery</a></li>
+        <li><a href="DonersPage.html">Donors</a></li>
+        <li><a href="ContactPage.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+    <div class="right-section">
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" class="user-icon" />
+    </div>
+  </header>
+  <title>Personal Carbon Footprint Calculator</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🌱 Personal Carbon Footprint Calculator 🌍</h2>
+
+    <label for="electricity">Monthly Electricity Usage (kWh): <span class="value-label" id="electricityValue">350</span></label>
+    <input type="range" id="electricity" min="0" max="1000" value="350" oninput="updateLabel('electricity')">
+
+    <label for="gasoline">Monthly Gasoline Consumption (liters): <span class="value-label" id="gasolineValue">100</span></label>
+    <input type="range" id="gasoline" min="0" max="500" value="100" oninput="updateLabel('gasoline')">
+
+    <label for="flights">Flight Travel per Year (hours): <span class="value-label" id="flightsValue">20</span></label>
+    <input type="range" id="flights" min="0" max="100" value="20" oninput="updateLabel('flights')">
+
+    <button onclick="calculateFootprint()">Calculate My Footprint</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+function updateLabel(id) {
+    const value = document.getElementById(id).value;
+    document.getElementById(id + 'Value').innerText = value;
+}
+
+function calculateFootprint() {
+    const electricity = parseFloat(document.getElementById('electricity').value);
+    const gasoline = parseFloat(document.getElementById('gasoline').value);
+    const flights = parseFloat(document.getElementById('flights').value);
+
+    const electricityEmission = electricity * 0.475;
+    const gasolineEmission = gasoline * 2.31;
+    const flightEmission = flights * 90;
+
+    const totalEmission = electricityEmission + gasolineEmission + (flightEmission / 12);
+
+    document.getElementById('result').innerText = `Your monthly carbon footprint is approximately ${totalEmission.toFixed(2)} kg of CO₂.`;
+}
+</script>
+
+</body>
+</html>

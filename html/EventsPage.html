@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Green | Upcoming Events</title>
+  <link rel="stylesheet" href="../Css/EventsPage.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="left-section">
+      <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" class="logo" />
+    </div>
+    <nav class="center-section">
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="GoalsPage.html">Goals</a></li>
+        <li><a href="DonatePage.html">Donate</a></li>
+        <li><a href="VolunteersPage.html">Volunteers</a></li>
+        <li class="active"><a href="EventsPage.html">Events</a></li>
+        <li><a href="Footprint.html">Footprint</a></li>
+        <li><a href="GalleryPage.html">Gallery</a></li>
+        <li><a href="DonersPage.html">Donors</a></li>
+        <li><a href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="right-section">
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" class="user-icon" />
+    </div>
+  </header>
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+    <B>Upcoming Events</B>
+    <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+    <p>Join our upcoming events and help create positive environmental change!</p>
+
+    <div class="events-container">
+      <div class="event-card">
+        <img src="../Image/Eventspageimage/image1.jpg" alt="Event 1">
+        <div class="event-date">
+          <span>May</span>
+          <strong>27</strong> 2025
+        </div>
+        <div class="event-info">
+          <h3>International Day of Forests</h3>
+          <p>Time: 10:00 AM - 4:00 PM | AlAreen Wildlife Park</p>
+          <p>Join us for a day dedicated to celebrating the importance of forests.</p>
+        </div>
+        <button class="register-btn">Register</button>
+
+        <form class="registration-form" style="display: none; flex-direction: column; gap: 10px;">
+          <input type="text" placeholder="Your Name" required style="display: block; width: 97%;" />
+          <input type="email" placeholder="Your Email" required style="display: block; width: 97%;" />
+          <button class="Submit" type="submit" style="display: block; margin-top: 10px;">Submit</button>
+        </form>
+        <p class="confirmation-message" style="display: none;">You have been registered!</p>
+      </div>
+
+      <div class="event-card">
+        <img src="../Image/Eventspageimage/image2.jpg" alt="Event 2">
+        <div class="event-date">
+          <span>Oct</span>
+          <strong>10</strong> 2025
+        </div>
+        <div class="event-info">
+          <h3>World Meteorological Day</h3>
+          <p>Time: 9:00 AM - 3:00 PM | Bahrain Museum</p>
+          <p>Participate in discussions about the significance of weather and climate.</p>
+        </div>
+        <button class="register-btn">Register</button>
+
+        <form class="registration-form" style="display: none; flex-direction: column; gap: 10px;">
+          <input type="text" placeholder="Your Name" required style="display: block; width: 97%;" />
+          <input type="email" placeholder="Your Email" required style="display: block; width: 97%;" />
+          <button class="Submit" type="submit" style="display: block; margin-top: 10px;">Submit</button>
+        </form>
+        <p class="confirmation-message" style="display: none;">You have been registered!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics-section">
+    <div class="stats-overlay">
+      <h2>Our Impact in Numbers</h2>
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="counter" data-target="300">0</div>
+          <p>Campaigns</p>
+        </div>
+        <div class="stat-box">
+          <div class="counter" data-target="293">0</div>
+          <p>Volunteers</p>
+        </div>
+        <div class="stat-box">
+          <div class="counter" data-target="445">0</div>
+          <p>Projects</p>
+        </div>
+        <div class="stat-box">
+          <div class="counter" data-target="102">0</div>
+          <p>Awards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../JavaScript/EventsPage.js"></script>
+</body>
+
+</html>
