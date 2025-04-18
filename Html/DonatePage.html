@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate | Save Green</title>
+  <link rel="stylesheet" href="../Css/DonatePage.css" />
+  <script src="../JavaScript/DonatePage.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="GoalsPage.html">Goals</a></li>
+        <li class="active"><a href="DonatePage.html">Donate</a></li>
+        <li><a href="VolunteersPage.html">Volunteers</a></li>
+        <li><a href="EventsPage.html">Events</a></li>
+        <li><a href="Footprint.html">Footprint</a></li>
+        <li><a href="GalleryPage.html">Gallery</a></li>
+        <li><a href="DonersPage.html">Donors</a></li>
+        <li><a href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="register-icon">
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" />
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="overlay">
+      <h1>Support Our Mission</h1>
+      <h2>Your contributions make <span>a difference!</span></h2>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="donation-box">
+    <img src="../Image/DonatePageimage/image2.jpg" alt="Donation Banner" class="donation-banner" />
+    <div class="donation-text">
+      <h3>Reduce Effect of Energy Industry</h3>
+      <p>
+        Join us in our mission to mitigate the environmental impact of the energy industry. Through initiatives that promote recycling, 
+        sustainable practices, and renewable energy, we aim to create a healthier planet. Together, we can make a difference!
+      </p>
+      <div class="progress-info">
+        <span>Current Fundraising: <span id="current-amount">$15,000</span></span>
+        <span>Goal: $50,000</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" id="progress-bar" style="width: 30%;"></div>
+        <div class="progress-circle" id="progress-circle">30%</div>
+      </div>
+      <input type="number" id="donationInput" placeholder="Enter amount to donate" />
+      <button class="donate-btn" onclick="handleDonation()">Donate Now</button>
+    </div>
+  </section>
+
+  <!-- Popup Message -->
+  <div class="popup" id="thankYouPopup">
+    <div class="popup-content">
+      <p>🌱 Thank you for your contribution!<br>Your donation helps make the Earth greener. 💚</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+</body>
+</html>

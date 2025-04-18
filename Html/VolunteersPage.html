@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenWave - Volunteers</title>
+  <link rel="stylesheet" href="../Css/VolunteersPage.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="left-section">
+      <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" class="logo" />
+    </div>
+    <nav class="center-section">
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="GoalsPage.html">Goals</a></li>
+        <li><a href="DonatePage.html">Donate</a></li>
+        <li class="active"><a href="VolunteersPage.html">Volunteers</a></li>
+        <li><a href="EventsPage.html">Events</a></li>
+        <li><a href="Footprint.html">Footprint</a></li>
+        <li><a href="GalleryPage.html">Gallery</a></li>
+        <li><a href="DonersPage.html">Donors</a></li>
+        <li><a href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="right-section">
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" class="user-icon" />
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- VOLUNTEERS SECTION -->
+    <section class="volunteers-section">
+      <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+      Our Volunteers
+      <img src="../Image/GoalsPageimage/nature.png" class="goals-icon" alt="leaf" />
+      <p>Increase in the awareness among people about various issues</p>
+      
+      <!-- Container for volunteer cards -->
+      <div class="volunteers-container">
+        <!-- VOLUNTEER CARD 1 -->
+        <div class="volunteer-card">
+          <img src="../Image/VolunteersPageimge/1.png" alt="Volunteer Photo 1" class="volunteer-image"/>
+          <h3 class="volunteer-name">Jamal Saad</h3>
+          <p class="volunteer-role">Founder</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="../Image/VolunteersPageimge/f.png" alt="Facebook Icon" /></a>
+            <a href="https://www.linkedin.com/help/linkedin/answer/a1335211"><img src="../Image/VolunteersPageimge/in.png" alt="LinkedIn Icon" /></a>
+            <a href="https://www.messenger.com/"><img src="../Image/VolunteersPageimge/message.png" alt="Message Icon" /></a>
+            <a href="https://x.com/?lang=en"><img src="../Image/VolunteersPageimge/x.png" alt="X Icon" /></a>
+          </div>
+        </div>
+        
+        <!-- VOLUNTEER CARD 2 -->
+        <div class="volunteer-card">
+          <img src="../Image/VolunteersPageimge/2.png" alt="Volunteer Photo 2" class="volunteer-image" />
+          <h3 class="volunteer-name">Ahmed Shaheen</h3>
+          <p class="volunteer-role">Co Founder</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="../Image/VolunteersPageimge/f.png" alt="Facebook Icon" /></a>
+            <a href="https://www.linkedin.com/help/linkedin/answer/a1335211"><img src="../Image/VolunteersPageimge/in.png" alt="LinkedIn Icon" /></a>
+            <a href="https://www.messenger.com/"><img src="../Image/VolunteersPageimge/message.png" alt="Message Icon" /></a>
+            <a href="https://x.com/?lang=en"><img src="../Image/VolunteersPageimge/x.png" alt="X Icon" /></a>
+          </div>
+        </div>
+        
+        <!-- VOLUNTEER CARD 3 -->
+        <div class="volunteer-card">
+          <img src="../Image/VolunteersPageimge/3.png" alt="Volunteer Photo 3" class="volunteer-image" />
+          <h3 class="volunteer-name">Asmaa Stan</h3>
+          <p class="volunteer-role">Manager</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="../Image/VolunteersPageimge/f.png" alt="Facebook Icon" /></a>
+            <a href="https://www.linkedin.com/help/linkedin/answer/a1335211"><img src="../Image/VolunteersPageimge/in.png" alt="LinkedIn Icon" /></a>
+            <a href="https://www.messenger.com/"><img src="../Image/VolunteersPageimge/message.png" alt="Message Icon" /></a>
+            <a href="https://x.com/?lang=en"><img src="../Image/VolunteersPageimge/x.png" alt="X Icon" /></a>
+          </div>
+        </div>
+        
+        <!-- VOLUNTEER CARD 4 -->
+        <div class="volunteer-card">
+          <img src="../Image/VolunteersPageimge/4.png" alt="Volunteer Photo 4" class="volunteer-image" />
+          <h3 class="volunteer-name">Sara John</h3>
+          <p class="volunteer-role">Chief Editor</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="../Image/VolunteersPageimge/f.png" alt="Facebook Icon" /></a>
+            <a href="https://www.linkedin.com/help/linkedin/answer/a1335211"><img src="../Image/VolunteersPageimge/in.png" alt="LinkedIn Icon" /></a>
+            <a href="https://www.messenger.com/"><img src="../Image/VolunteersPageimge/message.png" alt="Message Icon" /></a>
+            <a href="https://x.com/?lang=en"><img src="../Image/VolunteersPageimge/x.png" alt="X Icon" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- CALL TO ACTION (CTA) SECTION -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>DO YOU WANT TO BUILD A BETTER ENVIRONMENT?</h2>
+      <button class="cta-button" onclick="openModal()">JOIN WITH US</button>
+    </div>
+  </section>
+  
+  <!-- Modal for Joining -->
+  <div id="joinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Join Us</h2>
+      <form id="joinForm">
+        <div>
+          <label for="userName">Name:</label>
+          <input type="text" id="userName" name="userName" required />
+        </div>
+        <div>
+          <label for="userEmail">Email:</label>
+          <input type="email" id="userEmail" name="userEmail" required />
+        </div>
+        <div>
+          <label for="userMessage">Message:</label>
+          <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <script>
+    // Open the modal
+    function openModal() {
+      document.getElementById('joinModal').style.display = 'block';
+    }
+    
+    // Close the modal
+    function closeModal() {
+      document.getElementById('joinModal').style.display = 'none';
+    }
+    
+    // Handle form submission
+    document.getElementById('joinForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent actual form submission
+      
+      // Retrieve input values
+      const name = document.getElementById('userName').value;
+      const email = document.getElementById('userEmail').value;
+      const message = document.getElementById('userMessage').value;
+      
+      // Process the data as needed
+      alert(`Thank you, ${name}! We have received your message.`);
+      
+      // Optionally, clear the form and close the modal
+      document.getElementById('joinForm').reset();
+      closeModal();
+    });
+    
+    // Close the modal if the user clicks outside of the modal content
+    window.onclick = function(event) {
+      const modal = document.getElementById('joinModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
